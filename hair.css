@@ -1,0 +1,15 @@
+header{
+    background-color: blue;
+    color: azure;
+    font-style: italic;
+}
+#price{
+    font-size: larger;
+}
+footer{
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 5px;
+    font-size: 0.9rem;
+}

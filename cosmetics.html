@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            color: green;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        form {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form textarea {
+            height: 100px;
+            resize: none;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Earthly Essence</div>
+    <h1 class="text-center" style="margin-left: 40px;">Product Showcase</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cosmetics.html">Cosmetics</a>
+        <a href="skin.html">Skin Care</a>
+        <a href="hair1.html">Hair Care</a>
+    </nav>  
+</header>
+
+<div class="container">
+    <div class="products">
+        <div class="product-card">
+            <img src="base.png" alt="Base" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Base</h2>
+                <p class="product-price">Rs.200</p>
+                <p>Amazing product for everyday use.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="glosse.png" alt="glosse" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">glosse</h2>
+                <p class="product-price">Rs.250</p>
+                <p>Top quality and highly durable.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="mascara.png" alt="mascara" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Mascara</h2>
+                <p class="product-price">Rs.300</p>
+                <p>Perfect for gifting and special occasions.</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="blush on.png" alt="Blush On" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Blush On</h2>
+                <p class="product-price">Rs.180</p>
+                <p>Stylish and affordable for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+    <form action="submit_form.php" method="post">
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+            <option value="">--Choose a Product--</option>
+            <option value="product1">Base</option>
+            <option value="product2">Glosse</option>
+            <option value="product3">Mascara</option>
+            <option value="product4">Blush On</option>
+        </select>
+
+        <label for="address">Your Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy;2025 Vibarant and colorful website</p>
+</footer>
+</body>
+</html>

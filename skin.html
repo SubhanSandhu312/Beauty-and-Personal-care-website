@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthly Essence - Skincare Techniques</title>
+  <link rel="stylesheet" href="skin.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+  <header style="padding-top: 50px; padding-bottom: 60px;">
+   
+    <div class="logo" style="margin-left: 10px; font-size: 35px; color:rgb(248, 61, 164);">Earthly Essence</div>
+
+      <h1 class="text-center" style="margin-left: 40px;">Skin Products</h1>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="cosmetics.html">Cosmetics</a>
+          <a href="skin.html">Skin Care</a>
+          <a href="hair1.html">Hair Care</a>
+      </nav>
+   
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Unleash Your Skin's True Potential</h2>
+      <p>Discover the best skincare techniques and products for a radiant glow.</p>
+      <a href="#techniques" class="btn">Learn More</a>
+    </div>
+  </section>
+
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2  style="font-size: 32px;">Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Cleanser.png" alt="Cleanser">
+          <h3>Gentle Cleanser</h3>
+          <p>Perfect for sensitive skin.</p>
+          <p class="product-price">Rs.1299</p>
+        </div>
+        <div class="product-card">
+          <img src="mosturiser.png" alt="Moisturizer">
+          <h3>Hydrating Moisturizer</h3>
+          <p>Locks in moisture all day.</p>
+          <p class="product-price">Rs.1100</p>
+        </div>
+        <div class="product-card">
+          <img src="sunscreen.png.jpeg" alt="Sunscreen">
+          <h3>SPF 50 Sunscreen</h3>
+          <p>Protects against UV damage.</p>
+          <p class="product-price">Rs.1399</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="techniques" class="techniques">
+    <div class="container">
+      <h2>Best Skincare Techniques</h2>
+      <ul>
+        <li><strong>Double Cleansing:</strong> Start with an oil-based cleanser, followed by a water-based cleanser.</li>
+        <li><strong>Exfoliation:</strong> Use a gentle exfoliator twice a week to remove dead skin cells.</li>
+        <li><strong>Layering Products:</strong> Apply skincare in the correct order: cleanser, toner, serum, moisturizer, and sunscreen.</li>
+        <li><strong>Hydration:</strong> Use hydrating masks and serums to boost your skin's moisture levels.</li>
+        <li><strong>SPF Protection:</strong> Always use sunscreen, even on cloudy days.</li>
+      </ul>
+    </div>
+  </section>
+
+  <h2 style="text-align: center; font-size: 2em; color: #070707; padding: 20px;">Order Your Product</h2>
+
+
+    <form action="submit_form.php" method="post">
+      <label for="product">Select Product:</label>
+      <select id="product" name="product" required>
+          <option value="">--Choose a Product--</option>
+          <option value="product1">Sunscreen</option>
+          <option value="product2">Moisturizer</option>
+          <option value="product3">Cleanser</option>
+          <
+      </select>
+
+      <label for="address">Your Address:</label>
+      <textarea id="address" name="address" placeholder="Enter Your Address" required></textarea>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter Quantity" required>
+
+      <button type="submit">Submit</button>
+  </form>
+  </section>
+
+  <footer>
+    <p>Follow us on Instagram: EarthlyEssence_16</p>
+</footer>
+</body>
+</html>

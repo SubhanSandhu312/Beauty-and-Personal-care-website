@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthly Essence - Skincare Techniques</title>
+  <link rel="stylesheet" href="skin.css">
+  <link rel="stylesheet" href="header.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #000000;
+        color: rgb(248, 61, 164);
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .products {
+        display: grid;
+        grid-template-rows: repeat(1, 3fr);
+        gap: 40px;
+    }
+
+    .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .product-title {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        color: rgb(248, 61, 164);
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    form {
+        margin-top: 30px;
+        background-color: rgb(239, 238, 238);
+        padding: 20px;
+        border: 1px solid #515050;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    form input, form select, form textarea, form button {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #111010;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    form textarea {
+        height: 100px;
+        resize: none;
+        background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    }
+
+    form button {
+        background-color: #141414;
+        color: rgb(248, 61, 164);
+        border: none;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #353434;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #0a0909;
+        color: rgb(248, 61, 164);
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="padding-top: 50px; padding-bottom: 60px;">
+    <div class="logo" style="margin-left: 10px; font-size: 35px; color:rgb(248, 61, 164);">Earthly Essence</div>
+    <h1 class="text-center" style="margin-left: 40px;">Skin Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cosmetics.html">Cosmetics</a>
+      <a href="skin.html">Skin Care</a>
+      <a href="hair1.html">Hair Care</a>
+    </nav>
+  </header>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2 style="font-size: 32px;">Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Cleanser.png" alt="Cleanser">
+          <h3>Gentle Cleanser</h3>
+          <p>Perfect for sensitive skin.</p>
+          <p class="product-price">Rs.1299</p>
+          <a href="#form" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="moisturiser.png" alt="Moisturizer">
+          <h3>Hydrating Moisturizer</h3>
+          <p>Locks in moisture all day.</p>
+          <p class="product-price">Rs.1100</p>
+          <a href="#form" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="sunscreen.png" alt="Sunscreen">
+          <h3>SPF 50 Sunscreen</h3>
+          <p>Protects against UV damage.</p>
+          <p class="product-price">Rs.1399</p>
+          <a href="#form" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="techniques" class="techniques">
+    <div class="container">
+      <h2>Best Skincare Techniques</h2>
+      <ul>
+        <li><strong>Double Cleansing:</strong> Start with an oil-based cleanser, followed by a water-based cleanser.</li>
+        <li><strong>Exfoliation:</strong> Use a gentle exfoliator twice a week to remove dead skin cells.</li>
+        <li><strong>Layering Products:</strong> Apply skincare in the correct order: cleanser, toner, serum, moisturizer, and sunscreen.</li>
+        <li><strong>Hydration:</strong> Use hydrating masks and serums to boost your skin's moisture levels.</li>
+        <li><strong>SPF Protection:</strong> Always use sunscreen, even on cloudy days.</li>
+      </ul>
+    </div>
+  </section>
+
+  <form id="form" action="submit_form.php" method="post">
+    <label for="product">Select Product:</label>
+    <select id="product" name="product" required>
+      <option value="">--Choose a Product--</option>
+      <option value="sunscreen">Sunscreen</option>
+      <option value="moisturizer">Moisturizer</option>
+      <option value="cleanser">Cleanser</option>
+    </select>
+
+    <label for="address">Your Address:</label>
+    <textarea id="address" name="address" placeholder="Enter Your Address" required></textarea>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter Quantity" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>Follow us on Instagram: EarthlyEssence_16</p>
+  </footer>
+</body>
+</html>

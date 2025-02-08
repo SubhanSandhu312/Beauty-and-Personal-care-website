@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.form-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.col-md-4{
+    padding: 0px;
+}

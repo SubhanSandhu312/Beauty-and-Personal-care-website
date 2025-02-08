@@ -1,0 +1,42 @@
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    text-align: end;
+}
+
+header nav a:hover {
+    color: #ff69b4;
+}
+footer {
+    background: black;
+    color: #ff69b4;
+    text-align: center;
+    padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 0.9rem;
+}
+
+/* footer p {
+    margin: 0;
+    line-height: 1.5;
+} */
